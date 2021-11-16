@@ -1,9 +1,9 @@
 # Temperature monitoring using Tellstick
 
-## How to get started
-You need the Python OAuth and ConfigObj modules installed for this to work. Then you need to add a keypair for PUBLIC_KEY and PRIVATE_KEY. You can generate one here: http://api.telldus.com/keys/index [1]
+## Preparation
+According to the documentation[1], you need the Python OAuth and ConfigObj modules installed for this to work, and also add a keypair for PUBLIC_KEY and PRIVATE_KEY in the tdtool.py script below. You can generate one here: http://api.telldus.com/keys/index [1]
 
-When you have generated the keys and are authenticated, you need a program for reading and controllign your units. This version[2] of the tdtool.py is patched to handle sensors.
+When you have completed the steps above, update the supplied tdtool.py. The page I found it on is unfortunately gone[2] so send the anonymous authors good thoughts and use the supplied version. If you use a version of tdtool.py for another source, make sure it's patched to read sensors. Not all tdtool.py programs are created equal! Update the the script with your keys and you are good to go.
 
 Dead links referred above:
 
@@ -12,11 +12,10 @@ Dead links referred above:
 [2] http://developer.telldus.se/attachment/ticket/114/tdtool-with-sensors.py
 
 ## Scripts
-The main scripts are:
+The main scripts in this repository are:
 - tdtool.py
 - plot_tellstick_data.py
 - tellstick_to_sqlite3.py
-
 
 ### tdtool.py
 Update the script with your keys from above and then use it in the following manner:
